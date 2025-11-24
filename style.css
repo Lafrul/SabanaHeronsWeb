@@ -16,6 +16,16 @@ body {
     margin: 0px;
 }
 
+.azul {
+    color: var(--dark-blue);
+}
+
+.gris {
+    color: var(--dark-gray);
+}
+
+/* Header */
+
 header {
     display: flex;
     flex-direction: row;
@@ -62,6 +72,104 @@ nav a:hover {
     color: var(--dark-blue);
 }
 
-#logoFoot {
-    height: 120px;
+/*Footer*/
+
+.footer {
+  background-color: var(--dark-blue);
+  color: white;
+  padding-block: 20px;
+  padding-inline: 30px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+#col1-footer {
+    min-width: 100px;
+}
+
+#col23-footer {
+    min-width: 230px;
+}
+
+.footer-logo {
+  width: 180px;
+  filter: invert(1) brightness(100) contrast(100);
+  margin-right: 40px;
+}
+
+.footer-col h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: var(--medium-light-blue);
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.footer-divider {
+  border-color: var(--medium-light-blue);
+  margin-inline: 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.footer-bottom span {
+  margin-inline: auto;
+  text-align: center;
+}
+
+#instagram {
+    width: 17px;
+    filter: invert(1);
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* Index */
+#mainIndex {
+    margin-inline: 20px;
+    #portada h1 {
+        font-size: 70px;
+        margin-block: 10px;
+    }
+
+    #portada img {
+        width: 700px;
+    }
 }
