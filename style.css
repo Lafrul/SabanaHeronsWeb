@@ -300,3 +300,262 @@ nav a:hover {
 
 /* ------------------------------------------------------------------------------------------- */
 /* About */
+
+#mainAbout {
+  padding-inline: 8%;
+  padding-block: 40px;
+}
+
+/* Título principal */
+
+#mainAbout > h1 {
+  color: var(--dark-blue);
+  font-size: 42px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* ---------------- About descripción ---------------- */
+
+#about-descripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+#about-descripcion > p {
+  font-size: 14.5pt;
+  color: var(--light-gray);
+  line-height: 1.8;
+  max-width: 900px;
+  text-align: center;
+  align-self: center;
+}
+
+/* Lista de pilares */
+
+#about-descripcion ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#about-descripcion li {
+  background-color: whitesmoke;
+  padding: 30px 25px;
+  border-radius: 15px;
+  flex: 1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  font-size: 13.5pt;
+  color: var(--light-gray);
+  line-height: 1.6;
+  text-align: center;
+}
+
+#about-descripcion li h3 {
+  color: var(--dark-blue);
+  font-size: 18pt;
+  margin-bottom: 10px;
+}
+
+/* ---------------- Misión y visión ---------------- */
+
+#mision-vision {
+  background-color: var(--light-blue);
+  padding: 50px 60px;
+  border-radius: 20px;
+  margin-bottom: 80px;
+}
+
+#mision-vision h2 {
+  color: var(--dark-blue);
+  font-size: 28pt;
+  margin-bottom: 15px;
+}
+
+#mision-vision p {
+  font-size: 14pt;
+  color: var(--dark-gray);
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+/* ---------------- Impacto ---------------- */
+
+#about-impacto {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#about-impacto h2 {
+  color: var(--dark-blue);
+  font-size: 32pt;
+  margin-bottom: 40px;
+}
+
+#about-impacto article {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+#about-impacto article div {
+  background-color: whitesmoke;
+  padding: 35px 45px;
+  border-radius: 18px;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#about-impacto h3 {
+  font-size: 36pt;
+  color: var(--dark-blue);
+  margin: 0;
+}
+
+#about-impacto p {
+  margin-top: 10px;
+  font-size: 14pt;
+  color: var(--light-gray);
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 900px) {
+  #about-descripcion ul {
+    flex-direction: column;
+  }
+
+  #about-impacto article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main > h1 {
+    font-size: 34px;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* Team */
+
+#mainTeam {
+  padding-inline: 8%;
+  padding-block: 40px;
+}
+
+/* Título principal */
+
+#mainTeam > h1 {
+  text-align: center;
+  color: var(--dark-blue);
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+
+/* ---------------- Sección general del equipo ---------------- */
+
+#team-general {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 90px;
+}
+
+#team-general img {
+  width: 45%;
+  max-width: 420px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+
+#team-general p {
+  font-size: 14.5pt;
+  color: var(--light-gray);
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+/* ---------------- Personas / Roles ---------------- */
+
+#team-personas h2 {
+  text-align: center;
+  color: var(--dark-blue);
+  font-size: 32pt;
+  margin-bottom: 50px;
+}
+
+#team-personas > div{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+  margin-bottom: 80px;
+}
+
+/* Tarjetas */
+
+#team-personas article {
+  background-color: whitesmoke;
+  padding: 30px 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#team-personas article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+/* Nombre */
+
+#team-personas h3 {
+  color: var(--dark-blue);
+  font-size: 17pt;
+  margin-bottom: 8px;
+}
+
+/* Rol */
+
+.rol {
+  font-weight: 600;
+  color: var(--medium-dark-blue);
+  margin-bottom: 4px;
+}
+
+/* Carrera */
+
+.carrera {
+  font-size: 12.5pt;
+  color: var(--light-gray);
+  margin-bottom: 15px;
+}
+
+/* Descripción */
+
+.descrip-rol {
+  font-size: 13pt;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 900px) {
+  #team-general {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #team-general img {
+    width: 70%;
+  }
+
+  #mainTeam > h1 {
+    font-size: 34px;
+  }
+}
