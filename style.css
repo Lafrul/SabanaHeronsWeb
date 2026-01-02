@@ -157,6 +157,73 @@ nav a:hover {
     filter: invert(1);
 }
 
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .footer {
+    padding-inline: 20px;
+    text-align: center;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-col {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .footer-logo {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+
+  /* Centrar icono redes */
+  .icon {
+    margin: 10px auto 0;
+  }
+
+  .footer-divider {
+    margin-block: 25px;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+    padding-inline: 10px;
+  }
+}
+
+/* ---------------- Extra small devices ---------------- */
+
+@media (max-width: 480px) {
+
+  .footer-logo {
+    width: 130px;
+  }
+
+  .footer-col {
+    max-width: 280px;
+  }
+
+  .footer p {
+    font-size: 12.5px;
+  }
+}
+
+
 /* ------------------------------------------------------------------------------------------- */
 /* Index */
 
@@ -297,6 +364,114 @@ nav a:hover {
 .more-icon{
   width: 27px;
 }
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  /* ---------- Portada ---------- */
+
+  #portada {
+    flex-direction: column;
+    padding-inline: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  #portada article {
+    align-items: center;
+  }
+
+  #portada h1 {
+    font-size: 42px;
+  }
+
+  #portada #descripcion {
+    font-size: 13.5pt;
+    text-align: center;
+  }
+
+  #portada > img {
+    width: 95%;
+    margin-top: 25px;
+  }
+
+  #portada a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 10px 20px;
+    min-width: 220px;
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  /* ---------- Sección About ---------- */
+
+  .about {
+    padding-inline: 6%;
+  }
+
+  .about h2 {
+    font-size: 26pt;
+  }
+
+  .about p {
+    font-size: 13.5pt;
+    text-align: center;
+  }
+
+  /* ---------- Learn More ---------- */
+
+  #learn-more {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  #learn-more article {
+    width: 80%;
+    max-width: 340px;
+    height: auto;
+    padding-bottom: 25px;
+  }
+
+  #learn-more h3 {
+    font-size: 14pt;
+  }
+
+  #learn-more p {
+    font-size: 12pt;
+  }
+}
+
+/* ---------------- Extra small devices ---------------- */
+
+@media (max-width: 480px) {
+
+  #portada h1 {
+    font-size: 36px;
+  }
+
+  #portada #descripcion {
+    font-size: 12.5pt;
+  }
+
+  .about h2 {
+    font-size: 22pt;
+  }
+
+  .about p {
+    font-size: 12.5pt;
+  }
+
+  #learn-more article {
+    width: 90%;
+  }
+}
+
 
 /* ------------------------------------------------------------------------------------------- */
 /* About */
@@ -561,6 +736,14 @@ nav a:hover {
 }
 
 /* ------------------------------------------------------------------------------------------- */
+/* Experiences */
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* Projects */
+
+
+/* ------------------------------------------------------------------------------------------- */
 /* Hamburger menu (Mobile) */
 
 /* Ocultar checkbox */
@@ -587,12 +770,10 @@ nav a:hover {
 
 @media (max-width: 750px) {
 
-  /* Mostrar hamburguesa */
   .menu-icon {
     display: flex;
   }
 
-  /* Ocultar menú normal */
   header nav {
     position: absolute;
     top: 67px;
@@ -601,13 +782,26 @@ nav a:hover {
     background-color: white;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
-    padding-block: 30px;
     display: none;
+    gap: 0px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+    a {
+      width: 100%;
+      text-align: center;
+      padding-block: 15px;
+      border-bottom: 1px solid var(--light-blue);
+    }
+
+    a:hover {
+      background-color: whitesmoke;
+    }
+
+    a:last-child {
+      border-bottom: none;
+    }
   }
 
-  /* Mostrar menú cuando está activo */
   #menu-toggle:checked + .menu-icon + nav {
     display: flex;
   }
