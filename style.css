@@ -797,7 +797,7 @@ nav a:hover {
 .project-text h2 {
   color: var(--dark-blue);
   font-size: 28pt;
-  margin-bottom: 20px;
+  margin-block: 20px;
 }
 
 .project-text p {
@@ -805,6 +805,31 @@ nav a:hover {
   color: var(--light-gray);
   line-height: 1.8;
 }
+
+.project-text a {
+  display: inline-block;
+  margin-top: 0px;
+  padding: 10px 26px;
+  font-size: 13.5pt;
+  font-weight: 500;
+  text-decoration: none;
+
+  color: var(--light-blue);
+  background-color: var(--dark-blue);
+  border-radius: 12px;
+
+  transition: 
+    background-color 0.3s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.project-text a:hover {
+  background-color: var(--medium-dark-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
 
 /* ---------------- Carrusel ---------------- */
 
@@ -852,6 +877,11 @@ nav a:hover {
   .project-text p {
     text-align: center;
   }
+
+  .project-text a {
+    display: flex;
+    justify-self: center;
+}
 
   .carousel-wrapper {
     max-width: 520px;
@@ -1023,5 +1053,84 @@ nav a:hover {
 
   header {
     justify-content: space-between;
+  }
+}
+
+
+
+
+
+
+/* ============================================================================================= */
+/* Working on it page */
+
+.working {
+  min-height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding-inline: 20px;
+  padding-bottom: 17px;
+}
+
+.working-icon {
+  width: 100px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.working h1 {
+  font-size: 38px;
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+
+.working p {
+  font-size: 15pt;
+  color: var(--light-gray);
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.back-btn {
+  text-decoration: none;
+  padding: 10px 26px;
+  border-radius: 12px;
+  font-size: 13.5pt;
+  font-weight: 500;
+
+  color: var(--light-blue);
+  background-color: var(--dark-blue);
+
+  transition: 
+    background-color 0.3s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.back-btn:hover {
+  background-color: var(--medium-dark-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 600px) {
+
+  .working h1 {
+    font-size: 30px;
+  }
+
+  .working p {
+    font-size: 14pt;
+  }
+
+  .working-icon {
+    width: 90px;
   }
 }
