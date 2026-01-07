@@ -229,7 +229,7 @@ nav a:hover {
 
 #portada {
   padding-inline: 60px;
-  padding-block: 30px; 
+  padding-block: 40px; 
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -479,7 +479,7 @@ nav a:hover {
 
 #mainAbout {
   padding-inline: 8%;
-  padding-block: 40px;
+  padding-block: 30px;
 }
 
 /* Título principal */
@@ -620,7 +620,7 @@ nav a:hover {
 
 #mainTeam {
   padding-inline: 8%;
-  padding-block: 40px;
+  padding-block: 30px;
 }
 
 /* Título principal */
@@ -739,6 +739,137 @@ nav a:hover {
 /* ------------------------------------------------------------------------------------------- */
 /* Experiences */
 
+#experiences {
+  padding-inline: 8%;
+  padding-block: 30px 80px;
+}
+
+.experiences-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.experiences-header h1 {
+  font-size: 42px;
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+
+.experiences-header h1 span {
+  color: var(--light-blue);
+}
+
+.experiences-header p {
+  max-width: 700px;
+  margin-inline: auto;
+  font-size: 14.5pt;
+  color: var(--light-gray);
+  line-height: 1.7;
+}
+
+/* Grid */
+
+.experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+
+.experience-card {
+  background-color: white;
+  border-radius: 18px;
+  padding: 35px 32px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top row */
+
+.experience-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.year {
+  background-color: rgba(1,32,91,0.08);
+  color: var(--dark-blue);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 12pt;
+  font-weight: 500;
+}
+
+.position {
+  font-size: 12.5pt;
+  color: var(--dark-blue);
+}
+
+/* Text */
+
+.experience-card h2 {
+  font-size: 20pt;
+  color: var(--dark-blue);
+  margin-bottom: 8px;
+}
+
+.category {
+  color: var(--medium-light-blue);
+  font-size: 12.5pt;
+  margin-bottom: 18px;
+}
+
+.experience-card p {
+  color: var(--light-gray);
+  font-size: 14pt;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.experience-card h4 {
+  font-size: 13pt;
+  margin-bottom: 10px;
+  color: var(--dark-blue);
+}
+
+/* Badges */
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badges span {
+  padding: 6px 14px;
+  font-size: 11.5pt;
+  border-radius: 999px;
+  background-color: whitesmoke;
+  color: var(--dark-blue);
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 900px) {
+
+  .experiences-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experiences-header h1 {
+    font-size: 34px;
+  }
+
+  .experience-card {
+    padding: 30px 25px;
+  }
+}
+
+
 
 /* ------------------------------------------------------------------------------------------- */
 /* Projects */
@@ -764,7 +895,7 @@ nav a:hover {
 
 #mainProjects {
   padding-inline: 8%;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 #mainProjects > h1 {
