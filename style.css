@@ -1134,7 +1134,141 @@ nav a:hover {
   }
 }
 
+/* ------------------------------------------------------------------------------------------- */
+/* RoboCup Humanoid Soccer League */
 
+#hsl {
+  padding-inline: 8%;
+  padding-block: 40px 80px;
+}
+
+/* Hero */
+
+.hsl-hero {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.hsl-hero h1 {
+  font-size: 42px;
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+}
+
+.hsl-hero p {
+  max-width: 750px;
+  margin-inline: auto;
+  font-size: 15pt;
+  color: var(--light-gray);
+  line-height: 1.7;
+}
+
+/* Sections */
+
+.hsl-section {
+  max-width: 900px;
+  margin-inline: auto;
+  margin-bottom: 80px;
+}
+
+.hsl-section h2 {
+  font-size: 28pt;
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+}
+
+.hsl-section p {
+  font-size: 14.5pt;
+  color: var(--light-gray);
+  line-height: 1.8;
+}
+
+/* Light background */
+
+.light-bg {
+  background-color: whitesmoke;
+  padding: 50px 40px;
+  border-radius: 22px;
+}
+
+/* Documentation */
+
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.doc-card {
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 18px;
+  text-decoration: none;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.doc-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.14);
+}
+
+.doc-card h3 {
+  color: var(--dark-blue);
+  margin-bottom: 10px;
+}
+
+.doc-card p {
+  color: var(--light-gray);
+  font-size: 13.5pt;
+}
+
+/* Open source */
+
+.open-source {
+  text-align: center;
+}
+
+.github-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 32px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-size: 14pt;
+  font-weight: 500;
+  color: var(--light-blue);
+  background-color: var(--dark-blue);
+  transition: background-color 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.github-btn:hover {
+  background-color: var(--medium-dark-blue);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 700px) {
+
+  .hsl-hero h1 {
+    font-size: 34px;
+  }
+
+  .hsl-section h2 {
+    font-size: 24pt;
+  }
+
+  .light-bg {
+    padding: 35px 25px;
+  }
+
+  .hsl-section {
+    text-align: center;
+  }
+}
 
 /* ------------------------------------------------------------------------------------------- */
 /* Hamburger menu (Mobile) */
