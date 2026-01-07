@@ -642,8 +642,8 @@ nav a:hover {
 }
 
 #team-general img {
-  width: 70%;
-  max-width: 570px;
+  width: 60%;
+  max-width: 500px;
   border-radius: 20px;
   background-color: whitesmoke;
 }
@@ -672,7 +672,15 @@ nav a:hover {
 
 /* Tarjetas */
 
+#team-personas a {
+  text-decoration: none;
+  height: 80%;
+}
+
 #team-personas article {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: whitesmoke;
   padding: 30px 25px;
   border-radius: 18px;
@@ -720,7 +728,7 @@ nav a:hover {
 
 /* ---------------- Responsive ---------------- */
 
-@media (max-width: 900px) {
+@media (max-width: 1180px) {
   #team-general {
     flex-direction: column;
     text-align: center;
