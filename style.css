@@ -1065,6 +1065,7 @@ nav a:hover {
     display: flex;
     justify-self: center;
     max-width: 152px;
+    text-align: center;
 }
 
   .carousel-wrapper {
