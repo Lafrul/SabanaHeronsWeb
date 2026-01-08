@@ -974,9 +974,7 @@ nav a:hover {
 /* Texto */
 
 .project-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: 1;
 }
 
 .project-text h2 {
@@ -1054,9 +1052,11 @@ nav a:hover {
     gap: 35px;
   }
 
-  .project-text {
-    flex: 0;
-  }
+.project-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   .project-text h2 {
     font-size: 24pt;
@@ -1066,11 +1066,6 @@ nav a:hover {
   .project-text p {
     text-align: center;
   }
-
-  .project-text a {
-    display: flex;
-    justify-self: center;
-}
 
   .carousel-wrapper {
     max-width: 520px;
