@@ -974,7 +974,9 @@ nav a:hover {
 /* Texto */
 
 .project-text {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-text h2 {
