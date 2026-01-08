@@ -990,6 +990,7 @@ nav a:hover {
 }
 
 .project-text a {
+  display: inline-block;
   margin-top: 0px;
   padding: 10px 26px;
   font-size: 13.5pt;
@@ -1043,18 +1044,16 @@ nav a:hover {
 
 /* ---------------- Responsive ---------------- */
 
-@media (min-width: 901px) {
-  .project-text a {
-    display: inline-block;
-  }
-}
-
 @media (max-width: 900px) {
 
   .project,
   .project.reverse {
     flex-direction: column;
     gap: 35px;
+  }
+
+  .project-text {
+    flex: 0;
   }
 
   .project-text h2 {
@@ -1069,8 +1068,6 @@ nav a:hover {
   .project-text a {
     display: flex;
     justify-self: center;
-    max-width: 150px;
-    text-align: center;
 }
 
   .carousel-wrapper {
