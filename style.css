@@ -1064,6 +1064,7 @@ nav a:hover {
   .project-text a {
     display: flex;
     justify-self: center;
+    align-self: center;
     max-width: 152px;
     text-align: center;
 }
