@@ -2,12 +2,12 @@
 /* General */
 
 :root {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     
     --dark-blue: #01205b;
-    --medium-dark-blue: #023a87;
-    --medium-light-blue: #98b1d4;
-    --light-blue: #dce5f4;
+    --medium-dark-blue: #02387d;
+    --medium-light-blue: #93abc8;
+    --light-blue: #d9e1ef;
     --dark-gray: #414851;
     --light-gray: #596678;
 }
